@@ -1,5 +1,5 @@
 # express-typescript-starter
-Starting template for Express API with Typescript
+Starting template for Express API with Typescript [Swagger Add]
 
 ## Pre-requisities 
 Please run on Node versions >= 10 
@@ -14,6 +14,7 @@ Run Express API using the command
 ```
 npm run start
 ```
+Other case you need make .env for set more parameter
 
 ## License 
 MIT
