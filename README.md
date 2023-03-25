@@ -2,11 +2,22 @@
 Starting template for Express API with Typescript [Swagger Add]
 
 ## Pre-requisities 
-Please run on Node versions >= 10 
+- Please run on Node versions >= 10 
+- Already setup postgre (Tested on Postgre15)
+- Having at least one database
 
 Install dependencies using npm
 ```
 npm install
+```
+Create an .env file in the root directory, then fill the file with
+```
+PORT=@paste_your_port_express
+DB_USER=@paste_your_user_postgres
+DB_HOST=@paste_your_localhost_postgres
+DB_DATABASE=@paste_your_database_name
+DB_PASSWORD=@paste_your_password_postgres
+DB_PORT=@paste_your_port_postgres
 ```
 
 ## How to run
