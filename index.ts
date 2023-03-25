@@ -3,6 +3,7 @@ import swaggerUi from 'swagger-ui-express';
 import swaggerJsdoc from 'swagger-jsdoc';
 import dotenv from 'dotenv';
 import swaggerOptions from './swaggerOptions';
+import pool from './api/database/db';
 
 const app: Application = express();
 dotenv.config();
@@ -23,6 +24,10 @@ import exampleRoutes from './api/routes/exampleRoutes';
 app.use('/api/example', exampleRoutes);
 //==========================================================================
 
-app.listen(port, host, () => {
-  console.log(`Connected successfully on port http://${host}:${port}`);
+pool.connect().then(() => {
+  app.listen(port, host, () => {
+    console.log(`Connected successfully on port http://${host}:${port}`);
+  });
+}).catch((err) => {
+  console.error('Failed to connect to the database:\n\n', err, '\n');
 });
