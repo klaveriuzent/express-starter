@@ -27,7 +27,7 @@ app.use('/api', exampleRoutes);
 pool.connect().then(() => {
   app.listen(port, host, () => {
     console.log(`Connected successfully on port http://${host}:${port}`);
-    console.log(`Swagger already on port http://${host}:${port}/api-docs`)
+    console.log(`Swagger already on port http://${host}:${port}/api-docs`);
   });
 }).catch((err) => {
   console.error('Failed to connect to the database:\n\n', err, '\n');
