@@ -5,7 +5,7 @@ const router = express.Router();
 
 /**
  * @swagger
- * /api/example:
+ * /api:
  *   get:
  *     tags:
  *       - Example
@@ -21,7 +21,7 @@ router.get("/", controller.getAllExamples);
 
 /**
  * @swagger
- * /api/example/{id}:
+ * /api/{id}:
  *   get:
  *     tags:
  *       - Example
@@ -44,7 +44,7 @@ router.get("/:id", controller.getExampleById);
 
 /**
  * @swagger
- * /api/example:
+ * /api:
  *   post:
  *     tags:
  *       - Example
@@ -67,7 +67,7 @@ router.post("/", controller.createExample);
 
 /**
  * @swagger
- * /api/example/{id}:
+ * /api/{id}:
  *   put:
  *     tags:
  *       - Example
@@ -98,7 +98,7 @@ router.put("/:id", controller.updateExample);
 
 /**
  * @swagger
- * /api/example/{id}:
+ * /api/{id}:
  *   delete:
  *     tags:
  *       - Example

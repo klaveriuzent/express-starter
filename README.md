@@ -1,5 +1,5 @@
 # express-typescript-starter
-Starting template for Express API with Typescript [Swagger Add]
+Starting template for Express API with Typescript [Swagger & dotenv Support]
 
 ## Pre-requisities 
 - Please run on Node versions >= 10 
