@@ -16,7 +16,7 @@ pool.on('connect', () => {
 });
 
 pool.on('error', (err) => {
-  console.error('Unexpected error on idle client', err);
+  console.error('Unexpected error on idle client\n\n', err, '\n');
   process.exit(-1);
 });
 
