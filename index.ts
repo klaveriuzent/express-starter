@@ -25,4 +25,5 @@ app.use('/api/example', exampleRoutes);
 
 app.listen(port, host, () => {
   console.log(`Connected successfully on port http://${host}:${port}`);
+  console.log(`Swagger already on port http://${host}:${port}/api-docs`);
 });
